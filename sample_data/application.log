@@ -1,0 +1,5 @@
+2026-11-05 09:02:11 INFO api-gateway Request received
+2026-11-05 09:03:42 ERROR payments Database connection timeout
+2026-11-05 09:03:43 ERROR payments Database connection timeout
+2026-11-05 09:05:18 FATAL orders OutOfMemoryError: Java heap space
+2026-11-05 09:06:02 WARN inventory HTTP 503 from dependency

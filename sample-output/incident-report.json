@@ -1,0 +1,50 @@
+[
+  {
+    "fingerprint": "outofmemoryerror: java heap space",
+    "severity": "CRITICAL",
+    "count": 1,
+    "first_seen": "2026-11-05 09:05:18",
+    "last_seen": "2026-11-05 09:05:18",
+    "services": [
+      "order-service"
+    ],
+    "example_message": "OutOfMemoryError: Java heap space",
+    "recommendation": "Inspect heap usage and GC logs; capture a heap dump; check for leaks and right-size memory."
+  },
+  {
+    "fingerprint": "database connection timeout after <n>ms",
+    "severity": "HIGH",
+    "count": 2,
+    "first_seen": "2026-11-05 09:03:42",
+    "last_seen": "2026-11-05 09:03:43",
+    "services": [
+      "payment-service"
+    ],
+    "example_message": "Database connection timeout after 3000ms",
+    "recommendation": "Check dependency health, network path, connection-pool saturation, and timeout/retry settings."
+  },
+  {
+    "fingerprint": "http <n> from dependency inventory-db",
+    "severity": "HIGH",
+    "count": 1,
+    "first_seen": "2026-11-05 09:06:02",
+    "last_seen": "2026-11-05 09:06:02",
+    "services": [
+      "inventory-service"
+    ],
+    "example_message": "HTTP 503 from dependency inventory-db",
+    "recommendation": "Verify dependency availability, service endpoints, capacity, and recent deployments."
+  },
+  {
+    "fingerprint": "nullpointerexception at checkouthandler.java:<n>",
+    "severity": "HIGH",
+    "count": 1,
+    "first_seen": "2026-11-05 09:08:10",
+    "last_seen": "2026-11-05 09:08:10",
+    "services": [
+      "checkout-service"
+    ],
+    "example_message": "NullPointerException at CheckoutHandler.java:84",
+    "recommendation": "Inspect the referenced stack frame and validate inputs; add null-safe handling and regression tests."
+  }
+]

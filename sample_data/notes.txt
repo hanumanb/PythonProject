@@ -1,0 +1,2 @@
+Python file handling practice.
+Read this file, transform the content, and write an output file.

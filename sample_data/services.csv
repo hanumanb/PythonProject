@@ -1,0 +1,4 @@
+service,owner,criticality
+payments,commerce,high
+inventory,supply-chain,medium
+api,platform,high

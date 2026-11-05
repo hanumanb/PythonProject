@@ -1,0 +1,8 @@
+2026-11-05 09:02:11 INFO  api-gateway Request received GET /health status=200
+2026-11-05 09:03:42 ERROR payment-service Database connection timeout after 3000ms
+2026-11-05 09:03:43 ERROR payment-service Database connection timeout after 3000ms
+2026-11-05 09:04:01 WARN  payment-service Connection pool utilization at 95 percent
+2026-11-05 09:05:18 FATAL order-service OutOfMemoryError: Java heap space
+2026-11-05 09:06:02 ERROR inventory-service HTTP 503 from dependency inventory-db
+2026-11-05 09:07:45 INFO  api-gateway Request completed status=200 duration_ms=18
+2026-11-05 09:08:10 EXCEPTION checkout-service NullPointerException at CheckoutHandler.java:84

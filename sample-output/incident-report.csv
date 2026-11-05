@@ -1,0 +1,5 @@
+﻿severity,count,services,first_seen,last_seen,example_message,recommendation,fingerprint
+CRITICAL,1,order-service,2026-11-05 09:05:18,2026-11-05 09:05:18,OutOfMemoryError: Java heap space,Inspect heap usage and GC logs; capture a heap dump; check for leaks and right-size memory.,outofmemoryerror: java heap space
+HIGH,2,payment-service,2026-11-05 09:03:42,2026-11-05 09:03:43,Database connection timeout after 3000ms,"Check dependency health, network path, connection-pool saturation, and timeout/retry settings.",database connection timeout after <n>ms
+HIGH,1,inventory-service,2026-11-05 09:06:02,2026-11-05 09:06:02,HTTP 503 from dependency inventory-db,"Verify dependency availability, service endpoints, capacity, and recent deployments.",http <n> from dependency inventory-db
+HIGH,1,checkout-service,2026-11-05 09:08:10,2026-11-05 09:08:10,NullPointerException at CheckoutHandler.java:84,Inspect the referenced stack frame and validate inputs; add null-safe handling and regression tests.,nullpointerexception at checkouthandler.java:<n>

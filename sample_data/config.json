@@ -1,0 +1,5 @@
+{
+  "application": "sre-demo",
+  "environment": "development",
+  "replicas": 3
+}
